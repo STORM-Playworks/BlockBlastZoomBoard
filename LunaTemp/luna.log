@@ -1,0 +1,586 @@
+report@config:load 37.25
+Authorized using stored user info.
+report@account:authorize 9.84
+Exporting assets from Unity..............
+
+[ Stage1 ] Assets exported from Unity and staged for further processing
+report@unity:export 11688.58
+report@config:load 25.73
+Using /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[43752] font
+  Using alphabet  ??1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./??!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Combined 97 glyphs into bitmap texture at /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage1/tmp/fonts/LiberationSans-43752/output_0.png (56kb)
+Found custom rules for texture Assets/NavySoftBlockWood/Font/digital-7 SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/NavySoftBlockWood/Font/digital-7 SDF.asset","isOverride":true}
+Found custom rules for texture Assets/NavySoftBlockWood/Font/PHAGSPA OutLine.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/NavySoftBlockWood/Font/PHAGSPA OutLine.asset","isOverride":true}
+Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset","isOverride":true}
+Found custom rules for texture Assets/NavySoftBlockWood/Font/PHAGSPA SDF.asset
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/NavySoftBlockWood/Font/PHAGSPA SDF.asset","isOverride":true}
+Found custom rules for texture Resources/unity_builtin_extra/Default-Particle
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Resources/unity_builtin_extra/Default-Particle","isOverride":true}
+Found custom rules for texture Resources/unity_builtin_extra/Default-ParticleSystem
+  {"maxWidth":512,"maxHeight":512,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Resources/unity_builtin_extra/Default-Particle","isOverride":true}
+Resources:
+{}
+report@assets:stage2 23677.21
+report@assets:stage3 385.07
+[ Stage2 ] Assets postprocessed and bundled successfully
+report@config:unity 0.18
+report@config:load 38.21
+report@config:unity 4.66
+report@code:compose 157.81
+Authorized using stored user info.
+report@account:authorize 4.38
+Microsoft (R) Build Engine version 16.10.1 for Mono
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+
+Build started 10/8/2024 2:12:45 PM.
+
+Project "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj" on node 1 (Rebuild target(s)).
+
+CoreClean:
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityScriptsCompiler.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityScriptsCompiler.pdb".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.Html5.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.WebGL.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/DOTween.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/JetBrains.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Newtonsoft.Json.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.Core.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.dom.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.es5.dll".
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.scripthost.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/TextMeshPro.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityEngine.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityEngine.UI.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityEngine.UniversalRenderPipeline.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.xml".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.Html5.xml".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.WebGL.xml".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Newtonsoft.Json.xml".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.Core.xml".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.dom.xml".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.es5.xml".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.scripthost.xml".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/obj/Debug/Scripts.csproj.AssemblyReference.cache".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/obj/Debug/Scripts.csproj.CoreCompileInputs.cache".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/obj/Debug/Scripts.csproj.CopyComplete".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/obj/Debug/UnityScriptsCompiler.dll".
+
+  Deleting file "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/obj/Debug/UnityScriptsCompiler.pdb".
+
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+
+CoreCompile:
+
+  /Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/Current/bin/Roslyn/csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2022;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2022_3;UNITY_2022_3_34 /highentropyva+ /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.Core.17.9.42-luna/lib/net40/Bridge.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.Html5.17.9.0/lib/net40/Bridge.Html5.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.WebGL.1.22.0/lib/net40/Bridge.WebGL.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/DOTween.1.2.705/lib/net40/DOTween.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/com.unity.ide.rider/3.0.0/JetBrains.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.Newtonsoft.Json.1.16.0/lib/net40/Newtonsoft.Json.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.Core.1.6.6733/lib/net40/Retyped.Core.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.dom.2.8.6733/lib/net40/Retyped.dom.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.es5.2.8.6733/lib/net40/Retyped.es5.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.scripthost.2.8.6733/lib/net40/Retyped.scripthost.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/com.unity.textmeshpro/3.0.6/TextMeshPro.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Vendor/UnityEngine.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/com.unity.ui/1.2.1/UnityEngine.UI.dll /reference:/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/com.unity.urp/7.6/UnityEngine.UniversalRenderPipeline.dll /debug+ /debug:full /optimize- /out:obj/Debug/UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:8 /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/Following.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/GeneralAdvancedTechniques.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/GeneralBasic.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/GeneralBasics2d.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/GeneralEasingTypes.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/GeneralEventsListeners.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/GeneralSequencer.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/GeneralSimpleUI.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/GeneralUISpace.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/PathBezier.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/PathBezier2d.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/PathSpline.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/PathSpline2d.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/PathSplineEndless.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/PathSplinePerformance.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/PathSplines.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/PathSplineTrack.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Framework/LeanSmooth.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Framework/LeanTest.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Framework/LeanTween.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Framework/LeanTweenExt.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Framework/LTDescr.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Framework/LTDescrOptional.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Framework/LTSeq.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Data/DataInGame.cs "/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/Popup FrameWork/Popup.cs" "/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/Popup FrameWork/PopupManager.cs" /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/ScreenFrameWork/Screen.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/ScreenFrameWork/ScreenBackButton.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/ScreenFrameWork/ScreenManager.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/ScreenFrameWork/SingletonComponent.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/ScreenFrameWork/UIMonoBehaviour.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BlockBoard.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BlockObj.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BoardContainer.cs /Users/shahar.butz/Documents/G
+itHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BombItem.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BoosterMoveDestroy.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/CameraSize.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/EffectDestroyBlock3D.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/EffectObj.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/IGameMode.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/BombMode.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/EmptyMode.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/TimeMode.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Piece.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialBoardData.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialManager.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/GPGSIds.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/EffectManager.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/GameManager.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PieceManager.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PlayingManager.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PrefabsManager.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/SoundManager.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/SpriteManager.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/MonoHandler/MonoHandler.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/GameOverPopup.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SecondChancePopup.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SettingPopup.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Screen/GameScreen.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Screen/MenuScreen.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/ConstValue.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/CurveMove.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/DestroyByTime.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/DeviceScreenChanged.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/RatioResolution.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/JsonArray.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/MyExtensions.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/SoundButton.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Timer.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/UIAnimation.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Utilities.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Packages/DOTween_1_2_705/DOTween/Modules/DOTweenModuleAudio.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Packages/DOTween_1_2_705/DOTween/Modules/DOTweenModuleEPOOutline.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Packages/DOTween_1_2_705/DOTween/Modules/DOTweenModulePhysics.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Packages/DOTween_1_2_705/DOTween/Modules/DOTweenModulePhysics2D.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Packages/DOTween_1_2_705/DOTween/Modules/DOTweenModuleSprite.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Packages/DOTween_1_2_705/DOTween/Modules/DOTweenModuleUI.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Packages/DOTween_1_2_705/DOTween/Modules/DOTweenModuleUnityVersion.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Packages/DOTween_1_2_705/DOTween/Modules/DOTweenModuleUtils.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Scripts/Orientation/CameraSizeByResolution.cs /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Scripts/Orientation/OrientationManager.cs Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+
+  Using shared compilation with compiler from directory: /Library/Frameworks/Mono.framework/Versions/6.12.0/lib/mono/msbuild/Current/bin/Roslyn
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/GameManager.cs(100,18): warning CS0114: 'GameManager.Awake()' hides inherited member 'SingletonComponent<GameManager>.Awake()'. To make the current member override that implementation, add the override keyword. Otherwise add the new keyword. [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PlayingManager.cs(84,18): warning CS0114: 'PlayingManager.Awake()' hides inherited member 'SingletonComponent<PlayingManager>.Awake()'. To make the current member override that implementation, add the override keyword. Otherwise add the new keyword. [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(73,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMinTablet' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(67,45): warning CS0649: Field 'LayoutSupportDisplay.layoutGroupNormalRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(58,25): warning CS0649: Field 'LayoutSupportDisplay.layoutEqual2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/GameOverPopup.cs(14,29): warning CS0649: Field 'GameOverPopup.bestScoreText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BoardContainer.cs(22,23): warning CS0649: Field 'BoardContainer.shake' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(82,21): warning CS0649: Field 'AdjustRectTransformForSafeArea.offSetMax' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(54,25): warning CS0649: Field 'LayoutSupportDisplay.layoutNormalRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BoardContainer.cs(18,23): warning CS0649: Field 'BoardContainer.placeBlockPoint' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(72,23): warning CS0649: Field 'BoosterManager.hammerAnimation' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(66,29): warning CS0649: Field 'BoosterManager.rectButtonsBooster' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialManager.cs(30,20): warning CS0649: Field 'TutorialManager.popupCanvas' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialBoardData.cs(8,28): warning CS0649: Field 'TutorialBoardData.boardTutorial' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BlockBoard.cs(11,28): warning CS0649: Field 'BlockBoard.blockHightLight' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/GameManager.cs(53,29): warning CS0649: Field 'GameManager.bestScoreText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(14,18): warning CS0169: The field 'AdjustRectTransformForSafeArea.adjustForBannerAd' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/BombMode.cs(10,22): warning CS0649: Field 'BombMode.gameMode' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/CameraSize.cs(7,20): warning CS0649: Field 'CameraSize.cameraObj' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(27,19): warning CS0169: The field 'AdjustRectTransformForSafeArea.heightTestSafe' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/SoundManager.cs(18,25): warning CS0649: Field 'SoundManager.musicSource' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/EmptyMode.cs(8,22): warning CS0649: Field 'EmptyMode.gameMode' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/ScreenFrameWork/ScreenBackButton.cs(15,41): warning CS0649: Field 'ScreenBackButton.scene' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(85,19): warning CS0169: The field 'AdjustRectTransformForSafeArea.originHeightRatioLarge2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Scripts/Orientation/CameraSizeByResolution.cs(8,36): warning CS0649: Field 'CameraSizeByResolution.landscapeTargetSize' is never assigned to, and will always have its default value 0 [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/TimeMode.cs(12,19): warning CS0649: Field 'TimeMode.processTime' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Scripts/Orientation/CameraSizeByResolution.cs(6,38): warning CS0649: Field 'CameraSizeByResolution.referencePortraitResolution' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(71,45): warning CS0649: Field 'LayoutSupportDisplay.layoutGroupEqual2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(25,19): warning CS0169: The field 'AdjustRectTransformForSafeArea.widthTestSafe' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/Following.cs(25,21): warning CS0169: The field 'Following.velocityPos' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialBoardData.cs(12,23): warning CS0649: Field 'TutorialBoardData.targetHand' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/EffectDestroyBlock3D.cs(14,21): warning CS0649: Field 'EffectDestroyBlock3D.m_EulerAngleVelocity' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(50,27): warning CS0649: Field 'LayoutSupportDisplay.rectTarget' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(62,29): warning CS0649: Field 'BoosterManager.textBoosterBack' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(58,29): warning CS0649: Field 'BoosterManager.textBoosterOneHorizontal' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/GameManager.cs(69,25): warning CS0649: Field 'GameManager.gameSetting' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(32,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.originOffSetMin' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PlayingManager.cs(48,28): warning CS0649: Field 'PlayingManager.boardHexa' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BlockObj.cs(17,28): warning CS0649: Field 'BlockObj.block' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PlayingManager.cs(42,28): warning CS0649: Field 'PlayingManager.boardClassic8x8' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SecondChancePopup.cs(15,19): warning CS0649: Field 'SecondChancePopup.fillSecondChance' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SecondChancePopup.cs(10,29): warning CS0649: Field 'SecondChancePopup.durationText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialManager.cs(10,24): warning CS0649: Field 'TutorialManager.handObject' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BombItem.cs(16,29): warning CS0649: Field 'BombItem.stepText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/GameManager.cs(66,24): warning CS0649: Field 'GameManager.dataInGame' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SettingPopup.cs(17,19): warning CS0649: Field 'SettingPopup.soundIcon' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(83,34): warning CS0649: Field 'LayoutSupportDisplay.gridLayoutGroupEqual2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(84,19): warning CS0169: The field 'AdjustRectTransformForSafeArea.originWidthRatioLarge2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SettingPopup.cs(13,20): warning CS0649: Field 'SettingPopup.off' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(79,34): warning CS0649: Field 'LayoutSupportDisplay.gridLayoutGroupNormalRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs(22,25): warning CS0169: The field 'TestingUnitTests.lt2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/TimeMode.cs(10,22): warning CS0649: Field 'TimeMode.gameMode' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(75,30): warning CS0649: Field 'AdjustRectTransformForSafeArea.heightSafe' is never assigned to, and will always have its default value 0 [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(69,45): warning CS0649: Field 'LayoutSupportDisplay.layoutGroupLarge2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(60,25): warning CS0649: Field 'LayoutSupportDisplay.layoutTabletRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(83,21): warning CS0649: Field 'AdjustRectTransformForSafeArea.offSetMin' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(56,25): warning CS0649: Field 'LayoutSupportDisplay.layoutLarge2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/GameOverPopup.cs(11,29): warning CS0649: Field 'GameOverPopup.scoreText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BoardContainer.cs(20,24): warning CS0649: Field 'BoardContainer.blockPrefab' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs(10,20): warning CS0169: The field 'GeneralCameraShake.boomAudioClip' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(76,18): warning CS0649: Field 'BoosterManager.testMode' is never assigned to, and will always have its default value false [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(70,24): warning CS0649: Field 'BoosterManager.hammerObj' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialManager.cs(32,19): warning CS0649: Field 'TutorialManager.fadePopup' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BombItem.cs(14,28): warning CS0649: Field 'BombItem.eff_warning' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/GameManager.cs(55,29): warning CS0649: Field 'GameManager.currentScoreText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BlockBoard.cs(9,28): warning CS0649: Field 'BlockBoard.block' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/SoundManager.cs(20,25): warning CS0649: Field 'SoundManager.soundSource' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(59,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMinEqual2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/TimeMode.cs(14,23): warning CS0649: Field 'TimeMode.iconTime' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Scripts/Orientation/CameraSizeByResolution.cs(7,36): warning CS0649: Field 'CameraSizeByResolution.portraitTargetSize' is never assigned to, and will always have its default value 0 [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Scripts/Orientation/CameraSizeByResolution.cs(5,35): warning CS0649: Field 'CameraSizeByResolution.DebugUpdateCam' is never assigned to, and will always have its default value false [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialBoardData.cs(14,23): warning CS0649: Field 'TutorialBoardData.beginHand' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(75,19): warning CS0649: Field 'AdjustRectTransformForSafeArea.widthSafe' is never assigned to, and will always have its default value 0 [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/Following.cs(23,19): warning CS0169: The field 'Following.dude1ColorVelocity' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(48,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMinLarge2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PieceManager.cs(12,23): warning CS0649: Field 'PieceManager.pointsPlaceNextBlock' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(47,31): warning CS0649: Field 'LayoutSupportDisplay.layoutSupportType' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(70,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMaxTablet' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(60,29): warning CS0649: Field 'BoosterManager.textBoosterOneVertical' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialManager.cs(16,24): warning CS0649: Field 'TutorialManager.highLightPiecePlace' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(56,29): warning CS0649: Field 'BoosterManager.textBoosterOneBlock' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BombItem.cs(10,24): warning CS0649: Field 'BombItem.bugStandObj' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/Popup FrameWork/Popup.cs(34,17): warning CS0169: The field 'Popup.isInitialized' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/ScreenFrameWork/SingletonComponent.cs(15,16): warning CS0169: The field 'SingletonComponent<T>.isInitialized' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(30,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.originOffSetMax' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BlockObj.cs(19,28): warning CS0649: Field 'BlockObj.blockDestroyLine' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PlayingManager.cs(45,28): warning CS0649: Field 'PlayingManager.boardClassic10x10' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SecondChancePopup.cs(13,24): warning CS0169: The field 'SecondChancePopup.popupSecondChance' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(86,20): warning CS0169: The field 'AdjustRectTransformForSafeArea.cutouts' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(57,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMaxEqual2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(46,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMaxLarge2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(85,34): warning CS0649: Field 'LayoutSupportDisplay.gridLayoutGroupTabletRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SettingPopup.cs(15,19): warning CS0649: Field 'SettingPopup.musicIcon' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(81,34): warning CS0649: Field 'LayoutSupportDisplay.gridLayoutGroupLarge2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/ScreenFrameWork/ScreenManager.cs(26,16): warning CS0169: The field 'ScreenManager.isAnimating' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SettingPopup.cs(11,20): warning CS0649: Field 'SettingPopup.on' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs(23,25): warning CS0169: The field 'TestingUnitTests.lt3' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(73,45): warning CS0649: Field 'LayoutSupportDisplay.layoutGroupTabletRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(80,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.ratioTablet' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SettingPopup.cs(19,37): warning CS0414: The field 'SettingPopup.rateURL' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(44,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addHeightcreenRatioLarge2' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Piece.cs(25,18): warning CS0414: The field 'Piece.hexaBlock' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(55,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addHeightcreenRatioEqual2' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(63,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addWidthScreenRatioTablet' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BoardContainer.cs(10,17): warning CS0414: The field 'BoardContainer.height' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(16,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.bannerHeightMobile' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(36,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addWidthScreenNormal' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(53,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addWidthScreenRatioEqual2' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(20,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.bannerHeightTable' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PlayingManager.cs(33,23): warning CS0414: The field 'PlayingManager.currentGameState' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(65,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addHeightcreenRatioTablet' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(18,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.bannerHeightLarge2' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(42,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addWidthScreenRatioLarge2' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(38,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addHeightScreenNormal' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+_CopyFilesMarkedCopyLocal:
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.WebGL.1.22.0/lib/net40/Bridge.WebGL.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.WebGL.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/com.unity.ide.rider/3.0.0/JetBrains.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/JetBrains.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.Core.17.9.42-luna/lib/net40/Bridge.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/DOTween.1.2.705/lib/net40/DOTween.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/DOTween.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.Html5.17.9.0/lib/net40/Bridge.Html5.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.Html5.dll".
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.Newtonsoft.Json.1.16.0/lib/net40/Newtonsoft.Json.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Newtonsoft.Json.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.Core.1.6.6733/lib/net40/Retyped.Core.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.Core.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.dom.2.8.6733/lib/net40/Retyped.dom.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.dom.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/com.unity.textmeshpro/3.0.6/TextMeshPro.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/TextMeshPro.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.scripthost.2.8.6733/lib/net40/Retyped.scripthost.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.scripthost.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.es5.2.8.6733/lib/net40/Retyped.es5.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.es5.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/com.unity.ui/1.2.1/UnityEngine.UI.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityEngine.UI.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Vendor/UnityEngine.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityEngine.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/com.unity.urp/7.6/UnityEngine.UniversalRenderPipeline.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityEngine.UniversalRenderPipeline.dll".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.Core.17.9.42-luna/lib/net40/Bridge.xml" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.xml".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.Html5.17.9.0/lib/net40/Bridge.Html5.xml" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.Html5.xml".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.WebGL.1.22.0/lib/net40/Bridge.WebGL.xml" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Bridge.WebGL.xml".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Bridge.Newtonsoft.Json.1.16.0/lib/net40/Newtonsoft.Json.xml" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Newtonsoft.Json.xml".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.Core.1.6.6733/lib/net40/Retyped.Core.xml" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.Core.xml".
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.dom.2.8.6733/lib/net40/Retyped.dom.xml" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.dom.xml".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.es5.2.8.6733/lib/net40/Retyped.es5.xml" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.es5.xml".
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/packages/Retyped.scripthost.2.8.6733/lib/net40/Retyped.scripthost.xml" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/Retyped.scripthost.xml".
+
+  Creating "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/obj/Debug/Scripts.csproj.CopyComplete" because "AlwaysCreate" was specified.
+
+CopyFilesToOutputDirectory:
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/obj/Debug/UnityScriptsCompiler.dll" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityScriptsCompiler.dll".
+
+  Scripts -> /Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityScriptsCompiler.dll
+
+  Copying file from "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/obj/Debug/UnityScriptsCompiler.pdb" to "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/bin/Debug/UnityScriptsCompiler.pdb".
+
+BridgeNetCompilerTask:
+  Bridge started
+
+      To enable detailed logging, configure "logging" in bridge.json.
+
+      https://github.com/bridgedotnet/Bridge/wiki/global-configuration#logging
+
+  Bridge done
+
+Done Building Project "/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj" (Rebuild target(s)).
+
+
+
+Build succeeded.
+
+
+
+"/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj" (Rebuild target) (1) ->
+
+(CoreCompile target) -> 
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/GameManager.cs(100,18): warning CS0114: 'GameManager.Awake()' hides inherited member 'SingletonComponent<GameManager>.Awake()'. To make the current member override that implementation, add the override keyword. Otherwise add the new keyword. [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PlayingManager.cs(84,18): warning CS0114: 'PlayingManager.Awake()' hides inherited member 'SingletonComponent<PlayingManager>.Awake()'. To make the current member override that implementation, add the override keyword. Otherwise add the new keyword. [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(73,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMinTablet' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(67,45): warning CS0649: Field 'LayoutSupportDisplay.layoutGroupNormalRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(58,25): warning CS0649: Field 'LayoutSupportDisplay.layoutEqual2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/GameOverPopup.cs(14,29): warning CS0649: Field 'GameOverPopup.bestScoreText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BoardContainer.cs(22,23): warning CS0649: Field 'BoardContainer.shake' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(82,21): warning CS0649: Field 'AdjustRectTransformForSafeArea.offSetMax' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(54,25): warning CS0649: Field 'LayoutSupportDisplay.layoutNormalRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BoardContainer.cs(18,23): warning CS0649: Field 'BoardContainer.placeBlockPoint' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(72,23): warning CS0649: Field 'BoosterManager.hammerAnimation' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(66,29): warning CS0649: Field 'BoosterManager.rectButtonsBooster' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialManager.cs(30,20): warning CS0649: Field 'TutorialManager.popupCanvas' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialBoardData.cs(8,28): warning CS0649: Field 'TutorialBoardData.boardTutorial' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BlockBoard.cs(11,28): warning CS0649: Field 'BlockBoard.blockHightLight' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/GameManager.cs(53,29): warning CS0649: Field 'GameManager.bestScoreText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(14,18): warning CS0169: The field 'AdjustRectTransformForSafeArea.adjustForBannerAd' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/BombMode.cs(10,22): warning CS0649: Field 'BombMode.gameMode' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/CameraSize.cs(7,20): warning CS0649: Field 'CameraSize.cameraObj' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(27,19): warning CS0169: The field 'AdjustRectTransformForSafeArea.heightTestSafe' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/SoundManager.cs(18,25): warning CS0649: Field 'SoundManager.musicSource' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/EmptyMode.cs(8,22): warning CS0649: Field 'EmptyMode.gameMode' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/ScreenFrameWork/ScreenBackButton.cs(15,41): warning CS0649: Field 'ScreenBackButton.scene' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(85,19): warning CS0169: The field 'AdjustRectTransformForSafeArea.originHeightRatioLarge2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Scripts/Orientation/CameraSizeByResolution.cs(8,36): warning CS0649: Field 'CameraSizeByResolution.landscapeTargetSize' is never assigned to, and will always have its default value 0 [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/TimeMode.cs(12,19): warning CS0649: Field 'TimeMode.processTime' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Scripts/Orientation/CameraSizeByResolution.cs(6,38): warning CS0649: Field 'CameraSizeByResolution.referencePortraitResolution' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(71,45): warning CS0649: Field 'LayoutSupportDisplay.layoutGroupEqual2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(25,19): warning CS0169: The field 'AdjustRectTransformForSafeArea.widthTestSafe' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/Following.cs(25,21): warning CS0169: The field 'Following.velocityPos' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialBoardData.cs(12,23): warning CS0649: Field 'TutorialBoardData.targetHand' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/EffectDestroyBlock3D.cs(14,21): warning CS0649: Field 'EffectDestroyBlock3D.m_EulerAngleVelocity' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(50,27): warning CS0649: Field 'LayoutSupportDisplay.rectTarget' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(62,29): warning CS0649: Field 'BoosterManager.textBoosterBack' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(58,29): warning CS0649: Field 'BoosterManager.textBoosterOneHorizontal' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/GameManager.cs(69,25): warning CS0649: Field 'GameManager.gameSetting' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(32,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.originOffSetMin' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PlayingManager.cs(48,28): warning CS0649: Field 'PlayingManager.boardHexa' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BlockObj.cs(17,28): warning CS0649: Field 'BlockObj.block' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PlayingManager.cs(42,28): warning CS0649: Field 'PlayingManager.boardClassic8x8' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SecondChancePopup.cs(15,19): warning CS0649: Field 'SecondChancePopup.fillSecondChance' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SecondChancePopup.cs(10,29): warning CS0649: Field 'SecondChancePopup.durationText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialManager.cs(10,24): warning CS0649: Field 'TutorialManager.handObject' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BombItem.cs(16,29): warning CS0649: Field 'BombItem.stepText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/GameManager.cs(66,24): warning CS0649: Field 'GameManager.dataInGame' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SettingPopup.cs(17,19): warning CS0649: Field 'SettingPopup.soundIcon' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(83,34): warning CS0649: Field 'LayoutSupportDisplay.gridLayoutGroupEqual2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(84,19): warning CS0169: The field 'AdjustRectTransformForSafeArea.originWidthRatioLarge2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SettingPopup.cs(13,20): warning CS0649: Field 'SettingPopup.off' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(79,34): warning CS0649: Field 'LayoutSupportDisplay.gridLayoutGroupNormalRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs(22,25): warning CS0169: The field 'TestingUnitTests.lt2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/TimeMode.cs(10,22): warning CS0649: Field 'TimeMode.gameMode' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(75,30): warning CS0649: Field 'AdjustRectTransformForSafeArea.heightSafe' is never assigned to, and will always have its default value 0 [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(69,45): warning CS0649: Field 'LayoutSupportDisplay.layoutGroupLarge2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(60,25): warning CS0649: Field 'LayoutSupportDisplay.layoutTabletRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(83,21): warning CS0649: Field 'AdjustRectTransformForSafeArea.offSetMin' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(56,25): warning CS0649: Field 'LayoutSupportDisplay.layoutLarge2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/GameOverPopup.cs(11,29): warning CS0649: Field 'GameOverPopup.scoreText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BoardContainer.cs(20,24): warning CS0649: Field 'BoardContainer.blockPrefab' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs(10,20): warning CS0169: The field 'GeneralCameraShake.boomAudioClip' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(76,18): warning CS0649: Field 'BoosterManager.testMode' is never assigned to, and will always have its default value false [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(70,24): warning CS0649: Field 'BoosterManager.hammerObj' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialManager.cs(32,19): warning CS0649: Field 'TutorialManager.fadePopup' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BombItem.cs(14,28): warning CS0649: Field 'BombItem.eff_warning' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/GameManager.cs(55,29): warning CS0649: Field 'GameManager.currentScoreText' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BlockBoard.cs(9,28): warning CS0649: Field 'BlockBoard.block' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/SoundManager.cs(20,25): warning CS0649: Field 'SoundManager.soundSource' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(59,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMinEqual2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Mode/TimeMode.cs(14,23): warning CS0649: Field 'TimeMode.iconTime' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Scripts/Orientation/CameraSizeByResolution.cs(7,36): warning CS0649: Field 'CameraSizeByResolution.portraitTargetSize' is never assigned to, and will always have its default value 0 [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/Scripts/Orientation/CameraSizeByResolution.cs(5,35): warning CS0649: Field 'CameraSizeByResolution.DebugUpdateCam' is never assigned to, and will always have its default value false [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialBoardData.cs(14,23): warning CS0649: Field 'TutorialBoardData.beginHand' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(75,19): warning CS0649: Field 'AdjustRectTransformForSafeArea.widthSafe' is never assigned to, and will always have its default value 0 [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/Following.cs(23,19): warning CS0169: The field 'Following.dude1ColorVelocity' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(48,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMinLarge2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PieceManager.cs(12,23): warning CS0649: Field 'PieceManager.pointsPlaceNextBlock' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(47,31): warning CS0649: Field 'LayoutSupportDisplay.layoutSupportType' is never assigned to, and will always have its default value [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(70,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMaxTablet' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(60,29): warning CS0649: Field 'BoosterManager.textBoosterOneVertical' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Tutorial/TutorialManager.cs(16,24): warning CS0649: Field 'TutorialManager.highLightPiecePlace' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/BoosterManager.cs(56,29): warning CS0649: Field 'BoosterManager.textBoosterOneBlock' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BombItem.cs(10,24): warning CS0649: Field 'BombItem.bugStandObj' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/Popup FrameWork/Popup.cs(34,17): warning CS0169: The field 'Popup.isInitialized' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/ScreenFrameWork/SingletonComponent.cs(15,16): warning CS0169: The field 'SingletonComponent<T>.isInitialized' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(30,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.originOffSetMax' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BlockObj.cs(19,28): warning CS0649: Field 'BlockObj.blockDestroyLine' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PlayingManager.cs(45,28): warning CS0649: Field 'PlayingManager.boardClassic10x10' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SecondChancePopup.cs(13,24): warning CS0169: The field 'SecondChancePopup.popupSecondChance' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(86,20): warning CS0169: The field 'AdjustRectTransformForSafeArea.cutouts' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(57,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMaxEqual2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(46,21): warning CS0169: The field 'AdjustRectTransformForSafeArea.addOffSetMaxLarge2' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(85,34): warning CS0649: Field 'LayoutSupportDisplay.gridLayoutGroupTabletRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SettingPopup.cs(15,19): warning CS0649: Field 'SettingPopup.musicIcon' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(81,34): warning CS0649: Field 'LayoutSupportDisplay.gridLayoutGroupLarge2Ratio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/FrameWork/ScreenFrameWork/ScreenManager.cs(26,16): warning CS0169: The field 'ScreenManager.isAnimating' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SettingPopup.cs(11,20): warning CS0649: Field 'SettingPopup.on' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs(23,25): warning CS0169: The field 'TestingUnitTests.lt3' is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/LayoutSupportDisplay.cs(73,45): warning CS0649: Field 'LayoutSupportDisplay.layoutGroupTabletRatio' is never assigned to, and will always have its default value null [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(80,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.ratioTablet' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Popup/SettingPopup.cs(19,37): warning CS0414: The field 'SettingPopup.rateURL' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(44,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addHeightcreenRatioLarge2' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/Piece.cs(25,18): warning CS0414: The field 'Piece.hexaBlock' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(55,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addHeightcreenRatioEqual2' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(63,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addWidthScreenRatioTablet' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Game/BoardContainer.cs(10,17): warning CS0414: The field 'BoardContainer.height' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(16,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.bannerHeightMobile' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(36,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addWidthScreenNormal' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(53,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addWidthScreenRatioEqual2' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(20,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.bannerHeightTable' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Manager/PlayingManager.cs(33,23): warning CS0414: The field 'PlayingManager.currentGameState' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(65,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addHeightcreenRatioTablet' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(18,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.bannerHeightLarge2' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(42,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addWidthScreenRatioLarge2' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+  /Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/LunaTemp/stage3/processed-scripts/Assets/NavySoftBlockWood/Scripts/Util/Display/AdjustRectTransformForSafeArea.cs(38,19): warning CS0414: The field 'AdjustRectTransformForSafeArea.addHeightScreenNormal' is assigned but its value is never used [/Users/shahar.butz/Desktop/6.1.1/pipeline/templates/LunaCompiler/Scripts/Scripts.csproj]
+
+
+
+    114 Warning(s)
+
+    0 Error(s)
+
+
+
+Time Elapsed 00:00:29.00
+
+Source code compiled successfully!
+Diagnostics gathered successfully
+report@code:build 38466.48
+report@diagnostics:verify 1.83
+report@diagnostics:upload 2084.01
+report@code:stage 6841.18
+[ Stage3 ] Code compiled and bundled successfully.
+report@code:bundle 47607.02
+report@package:stage 1985.53
+[ Stage4 ] Target platform: develop
+[ Stage4 ] Package bundled successfully
+report@assets:stats 0.26

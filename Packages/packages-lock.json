@@ -220,7 +220,7 @@
       "url": "https://packages.unity.com"
     },
     "uk.lunalabs.luna": {
-      "version": "file:C:/Users/lydiadover/Documents/6.1.1/scripts",
+      "version": "file:../../../../Desktop/6.1.1/scripts",
       "depth": 0,
       "source": "local",
       "dependencies": {}

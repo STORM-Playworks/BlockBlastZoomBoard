@@ -1,0 +1,146 @@
+
+Bug01.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Eye half
+  rotate: false
+  xy: 496, 219
+  size: 94, 34
+  orig: 94, 34
+  offset: 0, 0
+  index: -1
+EyeClose
+  rotate: false
+  xy: 402, 203
+  size: 92, 50
+  orig: 92, 50
+  offset: 0, 0
+  index: -1
+Foot_LeftBottom_01
+  rotate: false
+  xy: 930, 208
+  size: 55, 45
+  orig: 55, 45
+  offset: 0, 0
+  index: -1
+Foot_LeftBottom_02
+  rotate: false
+  xy: 229, 2
+  size: 63, 67
+  orig: 63, 67
+  offset: 0, 0
+  index: -1
+Foot_LeftTop_01
+  rotate: false
+  xy: 229, 2
+  size: 63, 67
+  orig: 63, 67
+  offset: 0, 0
+  index: -1
+Foot_LeftTop_02
+  rotate: true
+  xy: 361, 64
+  size: 55, 45
+  orig: 55, 45
+  offset: 0, 0
+  index: -1
+Layer 1 copy
+  rotate: false
+  xy: 2, 2
+  size: 225, 251
+  orig: 225, 251
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: false
+  xy: 229, 121
+  size: 171, 132
+  orig: 171, 132
+  offset: 0, 0
+  index: -1
+Layer 9
+  rotate: false
+  xy: 668, 203
+  size: 65, 50
+  orig: 65, 50
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: false
+  xy: 229, 71
+  size: 130, 48
+  orig: 130, 48
+  offset: 0, 0
+  index: -1
+Rau1
+  rotate: false
+  xy: 402, 150
+  size: 78, 51
+  orig: 78, 51
+  offset: 0, 0
+  index: -1
+Rau2
+  rotate: false
+  xy: 794, 221
+  size: 73, 32
+  orig: 73, 32
+  offset: 0, 0
+  index: -1
+hand_LeftBottom_01
+  rotate: true
+  xy: 735, 201
+  size: 52, 57
+  orig: 52, 57
+  offset: 0, 0
+  index: -1
+hand_LeftBottom_02
+  rotate: false
+  xy: 350, 10
+  size: 50, 52
+  orig: 50, 52
+  offset: 0, 0
+  index: -1
+hand_LeftTop_01
+  rotate: false
+  xy: 592, 212
+  size: 74, 41
+  orig: 74, 41
+  offset: 0, 0
+  index: -1
+hand_LeftTop_02
+  rotate: false
+  xy: 592, 212
+  size: 74, 41
+  orig: 74, 41
+  offset: 0, 0
+  index: -1
+hand_RightBottom_01
+  rotate: true
+  xy: 869, 207
+  size: 46, 59
+  orig: 46, 59
+  offset: 0, 0
+  index: -1
+hand_RightBottom_02
+  rotate: true
+  xy: 869, 207
+  size: 46, 59
+  orig: 46, 59
+  offset: 0, 0
+  index: -1
+hand_RightTop_01
+  rotate: true
+  xy: 294, 2
+  size: 67, 54
+  orig: 67, 54
+  offset: 0, 0
+  index: -1
+hand_RightTop_02
+  rotate: true
+  xy: 294, 2
+  size: 67, 54
+  orig: 67, 54
+  offset: 0, 0
+  index: -1

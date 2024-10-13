@@ -1,0 +1,104 @@
+
+Bug02.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Eye
+  rotate: false
+  xy: 869, 184
+  size: 121, 70
+  orig: 121, 70
+  offset: 0, 0
+  index: -1
+Foot_LeftBottom_01
+  rotate: true
+  xy: 949, 127
+  size: 55, 45
+  orig: 55, 45
+  offset: 0, 0
+  index: -1
+Foot_LeftTop_01
+  rotate: true
+  xy: 589, 21
+  size: 63, 67
+  orig: 63, 67
+  offset: 0, 0
+  index: -1
+Layer 1 copy
+  rotate: false
+  xy: 2, 3
+  size: 225, 251
+  orig: 225, 251
+  offset: 0, 0
+  index: -1
+Layer 5
+  rotate: false
+  xy: 696, 122
+  size: 171, 132
+  orig: 171, 132
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: false
+  xy: 457, 36
+  size: 130, 48
+  orig: 130, 48
+  offset: 0, 0
+  index: -1
+Rau1
+  rotate: false
+  xy: 869, 131
+  size: 78, 51
+  orig: 78, 51
+  offset: 0, 0
+  index: -1
+Rau2
+  rotate: false
+  xy: 457, 2
+  size: 73, 32
+  orig: 73, 32
+  offset: 0, 0
+  index: -1
+Wing
+  rotate: false
+  xy: 457, 86
+  size: 237, 168
+  orig: 237, 168
+  offset: 0, 0
+  index: -1
+hand_LeftBottom_01
+  rotate: true
+  xy: 772, 68
+  size: 52, 57
+  orig: 52, 57
+  offset: 0, 0
+  index: -1
+hand_LeftBottom_02
+  rotate: false
+  xy: 831, 68
+  size: 50, 52
+  orig: 50, 52
+  offset: 0, 0
+  index: -1
+hand_LeftTop_01
+  rotate: false
+  xy: 696, 79
+  size: 74, 41
+  orig: 74, 41
+  offset: 0, 0
+  index: -1
+hand_LeftTop_02
+  rotate: false
+  xy: 696, 79
+  size: 74, 41
+  orig: 74, 41
+  offset: 0, 0
+  index: -1
+seedwing
+  rotate: false
+  xy: 229, 34
+  size: 226, 220
+  orig: 226, 220
+  offset: 0, 0
+  index: -1
