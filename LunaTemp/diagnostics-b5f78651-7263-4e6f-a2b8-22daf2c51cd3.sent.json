@@ -1,0 +1,296 @@
+{
+    "BuildID": "b5f78651-7263-4e6f-a2b8-22daf2c51cd3",
+    "Command": "project:build",
+    "ProjectID": "6c1be5bf0a106ba48902a4e901795c4a",
+    "ProjectStateHash": "4a0e65a730a1bd7575df833277215e220d87cd3f9ee3f0668b98dc01455c38b4",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1729651342226,
+    "EndTime": 1729651402968,
+    "PlaygroundUserID": 9433,
+    "OperatingSystem": "darwin",
+    "UnityPackageID": null,
+    "TargetPlatform": "develop",
+    "UnityVersion": "2022.3.34f1",
+    "LunaVersion": "6.1.1",
+    "LogCount": 11,
+    "Logs": [
+        {
+            "LogID": "96cae8ae-fdcc-4763-9fb8-239848a62ea7",
+            "Order": 8,
+            "Timestamp": 1729651403610,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3006",
+            "Description": "You are not using the Luna API: Playable.InstallFullGame",
+            "Details": [
+                "You are not using the Luna API: Playable.InstallFullGame. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+            ],
+            "DescriptionValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "DetailsValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "4380d718-af9c-4883-934c-02b7ac22b8e7",
+            "Order": 8,
+            "Timestamp": 1729651403611,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3006",
+            "Description": "You are not using the Luna API: LifeCycle.GameEnded",
+            "Details": [
+                "You are not using the Luna API: LifeCycle.GameEnded. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+            ],
+            "DescriptionValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "DetailsValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "7ea26c85-796f-416f-a857-a683521245d6",
+            "Order": 8,
+            "Timestamp": 1729651403611,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3008",
+            "Description": "You are only using: 1 custom events.",
+            "Details": [
+                "You are only using 1 custom events. It is recommended to use more custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                "1"
+            ],
+            "DetailsValues": [
+                "1"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "2b3bfb16-aeec-4953-9335-0ed5adda47ab",
+            "Order": 8,
+            "Timestamp": 1729651403612,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3011",
+            "Description": "You are not using any LunaPlaygroundFields attributes.",
+            "Details": [
+                "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": null,
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "bee6587e-e17b-4040-b55a-338491011ae5",
+            "Order": 0,
+            "Timestamp": 1729651346858,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1030",
+            "Description": "TMP Font Asset uses unsupported 'Atlas Population Mode'",
+            "Details": [
+                "TMP Font Asset '{0}' uses Atlas Population Mode '{1}' which is not supported"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "LiberationSans SDF - Fallback",
+                "Dynamic"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "2d5526cf-17c4-4d05-a56b-78184682a571",
+            "Order": 1,
+            "Timestamp": 1729651354883,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1014",
+            "Description": "We recommend running Runtime Analysis to find and remove all unused code",
+            "Details": [
+                "Navigate to the Runtime Analysis → Code tab to enable code stripping. Before uploading the playable, please make sure to have played all scenario’s of the playable in a development build to make Runtime Analysis work properly."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "0d9e2811-aa84-4ed8-b6bf-c902fa456bae",
+            "Order": 2,
+            "Timestamp": 1729651354907,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1027",
+            "Description": "This DOTween version is not supported",
+            "Details": [
+                "The incorrect DOTween version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "4651feac-6122-4bb6-b5be-04e661378d76",
+            "Order": 3,
+            "Timestamp": 1729651354907,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1015",
+            "Description": "This TMP version is not fully supported",
+            "Details": [
+                "The incorrect Text Mesh Pro for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "ea087360-d06e-45c7-99d5-ab71680c78c5",
+            "Order": 4,
+            "Timestamp": 1729651354907,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.7.6)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "/Users/shahar.butz/Documents/GitHub/BlockBlastZoomBoard/Packages/manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "e8db2111-d093-4b07-83d7-45d9a012af6a",
+            "Order": 5,
+            "Timestamp": 1729651354908,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1010",
+            "Description": "Looks like a collider was scaled, this might affect performance.",
+            "Details": [
+                "Piece_Shape_0",
+                "Piece_Shape_1",
+                "Piece_Shape_2",
+                "Piece_Shape_3",
+                "Piece_Shape_4",
+                "Piece_Shape_5",
+                "Piece_Shape_6",
+                "Piece_Shape_7",
+                "Piece_Shape_8",
+                "Piece_Shape_9",
+                "Piece_Shape_10",
+                "Piece_Shape_11",
+                "Piece_Shape_12",
+                "Piece_Shape_13",
+                "Piece_Shape_14",
+                "Piece_Shape_15",
+                "Piece_Shape_16",
+                "Piece_Shape_17",
+                "Piece_Shape_18",
+                "Piece_Shape_19",
+                "Piece_Shape_20",
+                "Piece_Shape_22",
+                "Piece_Shape_23",
+                "Piece_Shape_24",
+                "Piece_Shape_25",
+                "Piece_Shape_26",
+                "Piece_Shape_27"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 27,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "681dd14f-5a45-4d48-bd4b-352e50fe5612",
+            "Order": 6,
+            "Timestamp": 1729651354908,
+            "Stage": 1,
+            "ErrorType": 3,
+            "ErrorCode": "LP1008",
+            "Description": "There are missing components on Advertisement.",
+            "Details": [
+                "Advertisement",
+                "WarningArea10x12",
+                "WarningArea8x10"
+            ],
+            "DescriptionValues": [
+                "Advertisement"
+            ],
+            "DetailsValues": [],
+            "LogCount": 3,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}

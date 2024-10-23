@@ -31,4 +31,15 @@ public class CameraSizeByResolution : MonoBehaviour
         float modifiedSize = isPortrait? (targetSize / fixedRatio) : (targetSize * fixedRatio);
         Camera.main.orthographicSize = (modifiedSize * screenRatio);
     }
+
+    public void UpdateTargetSizes(float portraitTarget, float landscapeTarget)
+    {
+        portraitTargetSize = portraitTarget;
+        landscapeTargetSize = landscapeTarget;
+    }
+
+    public float GetCurrentSize()
+    {
+        return portraitTargetSize;
+    }
 }

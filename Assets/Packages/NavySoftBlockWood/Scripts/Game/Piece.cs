@@ -181,7 +181,6 @@ public class Piece : MonoHandler
         
         int randomIndex = Random.Range(0, filteredValues.Length);
         
-        print("random color is " + filteredValues[randomIndex]);
         return filteredValues[randomIndex];
     }
     
@@ -206,8 +205,10 @@ public class Piece : MonoHandler
     {
         if (!CanSeleted) return;
 
-        float scale = PlayingManager.Instance.GetCurrentBoard.GetBlockScale / transform.localScale.x;
-        scale = scale * ((GameManager.Instance.GetGameMode == GameMode.HEXA) ? .82f : .98f);
+        //float scale = PlayingManager.Instance.GetCurrentBoard.GetBlockScale / transform.localScale.x;
+        //scale = scale * ((GameManager.Instance.GetGameMode == GameMode.HEXA) ? .82f : .98f);
+        Vector3 worldScale = GetWorldScale(transform);
+        float scale = 1f / worldScale.x;
         LeanTween.scale(gameObject, Vector3.one *( (selected) ? originScale * scale : originScale), .1f);
         for (int i = 0; i < blockObjs.Count; i++)
         {
@@ -233,6 +234,21 @@ public class Piece : MonoHandler
 
         }
         isUpdate = selected;
+    }
+    
+    public Vector3 GetWorldScale(Transform transform)
+    {
+        Vector3 worldScale = transform.localScale;
+        Transform parent = transform.parent;
+
+        while (parent != null)
+        {
+            Vector3 parentScale = parent.localScale;
+            worldScale = Vector3.Scale(worldScale, parentScale);
+            parent = parent.parent;
+        }
+
+        return worldScale;
     }
 
  

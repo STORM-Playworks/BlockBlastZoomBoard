@@ -24,6 +24,9 @@ public class SpriteManager : SingletonComponent<SpriteManager>
     [SerializeField] 
     private Sprite[] blockColorSprites;
 
+    [SerializeField] 
+    private Sprite[] blockGemSprites;
+    
     public List<Sprite> GetBlockShow2D => blockShow2D;
 
     public List<Sprite> GetBlocksShow3D => blockShow3D;
@@ -94,6 +97,29 @@ public class SpriteManager : SingletonComponent<SpriteManager>
 
         return spr;
     }
+
+    public Sprite GetGemSpriteByColor(BlockGemColor col)
+    {
+        Sprite spr = null;
+        
+        switch (col)
+        {
+            case BlockGemColor.Empty:
+                spr = null;
+                break;
+            case BlockGemColor.Cyan:
+                spr = blockGemSprites[0];
+                break;
+            case BlockGemColor.Red:
+                spr = blockGemSprites[1];
+                break;
+            case BlockGemColor.Purple:
+                spr = blockGemSprites[2];
+                break;
+        }
+
+        return spr;
+    }
 }
 
 public enum BlockColor
@@ -108,4 +134,12 @@ public enum BlockColor
     White,
     Brown,
     Empty
+}
+
+public enum BlockGemColor
+{
+    Empty,
+    Cyan,
+    Red,
+    Purple
 }
