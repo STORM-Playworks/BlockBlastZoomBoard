@@ -93,9 +93,6 @@ public class BoardContainer : MonoHandler
                     
                     foreach (var block in blocksToAnimate)
                     {
-                        block.transform.DOScale(animScale, animDuration / 2f)
-                            .SetEase(Ease.OutBack)
-                            .SetLoops(2, LoopType.Yoyo);
                         Vector3 newPos = GetBlockPosition(block.x, block.y, nextBlockPos);
                         newPos = Vector3.Scale(newPos, Vector3.one * animScale);
                         block.transform.DOLocalMove(newPos, animDuration / 2f)
@@ -103,6 +100,11 @@ public class BoardContainer : MonoHandler
                             .SetLoops(2, LoopType.Yoyo)
                             .OnComplete(() => CameraShake());
                         block.MultiplySortingOrder(2);
+                        
+                        block.transform.DOScale(animScale, animDuration / 2f)
+                            .SetEase(Ease.OutBack)
+                            .SetLoops(2, LoopType.Yoyo)
+                            .OnComplete(() => block.OnBlockLand(0.5f, true, block.transform.position));
                     }
                     await Task.Delay((int)(1000* animDuration / 2f));
 
@@ -112,7 +114,7 @@ public class BoardContainer : MonoHandler
             }
         }
         
-        await Task.Delay(10);
+        await Task.Delay((int)(1000* blockRiseTime));
     }
 
     private IEnumerator SetBlockScale()
@@ -233,6 +235,14 @@ public class BoardContainer : MonoHandler
         List<BlockBoard> spiralBlocks = GetBlocks;
         spiralBlocks = SortInSpiralOrder(spiralBlocks);
 
+        if (currentBlockAnimationTimeIndex >= totalBlockAnimationTimes.Length)
+        {
+            Debug.Log("Win!");
+            EndcardManagement.Instance.ActivateEndcard();
+            PlayingManager.Instance.IsGameOver = true;
+            return;
+        }
+        
         float totalBlockAnimationTime = totalBlockAnimationTimes[currentBlockAnimationTimeIndex];
         currentBlockAnimationTimeIndex++;
         
@@ -261,12 +271,18 @@ public class BoardContainer : MonoHandler
 
         await Task.Delay((int)((totalBlockAnimationTime + delayBetweenBlocks) * 1000));
 
+        int outerBlocksAmount = (width * 4) - 3;
+        int currentBlockCount = 0;
+        
         foreach (var block in spiralBlocks)
         {
+            currentBlockCount++;
+            bool spawnParticle = (currentBlockCount <= outerBlocksAmount);
+
             block.transform.DOScale(1f, blockRiseTime).SetEase(blockLandAnimCurve);
             Vector3 newPos = GetBlockPosition(block.x, block.y, nextBlockPos);
             block.transform.DOLocalMove(newPos, blockRiseTime).SetEase(blockLandAnimCurve)
-                .OnComplete(() => block.MultiplySortingOrder(0.5f));
+                .OnComplete(() => block.OnBlockLand(0.5f, spawnParticle, newPos));
         }
         
         await Task.Delay((int)((blockRiseTime * 0.7f) * 1000));

@@ -32,7 +32,7 @@ public class Piece : MonoHandler
 
     private float originScale;
 
-    private bool isUpdate = false;
+    public bool IsUpdate { get; set; }
 
 
     public Piece pieceCheckPlaceBoard;
@@ -47,6 +47,8 @@ public class Piece : MonoHandler
 
     public int PieceIndex { get; set; }
 
+    public Vector3 possiblePlacementPos;
+
     public int Score => blocksOnBoard.Count * GameManager.Instance.SCORE_ONE_BLOCK;
 
     public List<BlockObj> GetBlockObjs => blockObjs;
@@ -57,7 +59,7 @@ public class Piece : MonoHandler
     private void Update()
     {
        
-        if (!isUpdate) return;
+        if (!IsUpdate) return;
 
         //Off HightLight
 
@@ -233,7 +235,7 @@ public class Piece : MonoHandler
             }
 
         }
-        isUpdate = selected;
+        IsUpdate = selected;
     }
     
     public Vector3 GetWorldScale(Transform transform)
@@ -255,6 +257,8 @@ public class Piece : MonoHandler
     public IEnumerator CheckPieceCanPlaceBoard()
     {
        // Debug.Log("Check Piece Can Place " +gameObject.name);
+        possiblePlacementPos = Vector3.one * 999;
+       
         for (int i = 0; i < PlayingManager.Instance.GetCurrentBoard.GetBlocks.Count; i++)
         {
             BlockBoard _blockBoard = PlayingManager.Instance.GetCurrentBoard.GetBlocks[i];
@@ -272,6 +276,7 @@ public class Piece : MonoHandler
                 //SetBlockImage(SpriteManager.Instance.GetBlocksShow3D[0]);
                 SetBlockColor(Color.white);
                 CanSeleted = true;
+                possiblePlacementPos = position;
                 yield break;
             }
             else
@@ -280,8 +285,6 @@ public class Piece : MonoHandler
                 SetBlockColor(Color.gray);
                 CanSeleted = false;
             }
-
- 
         }
 
 
@@ -290,7 +293,7 @@ public class Piece : MonoHandler
 
     public bool CanPlacePieceOnBoard()
     {
-        isUpdate = false;
+        IsUpdate = false;
         blocksOnBoard.Clear();
         for (int i = 0; i < blockObjs.Count; i++)
         {
@@ -347,10 +350,22 @@ public class Piece : MonoHandler
             blockObjs[i].transform.localScale = Vector3.one * newScale;
         }
     }
+
+    private void BlockPlaceEffect()
+    {
+        foreach (var b in blockObjs)
+        {
+            Vector3 oPos = b.transform.position;
+            //Not sure why there's a slight offset, but since all my blocks move in intervals of 1 in world space, I'm just rounding the positions for now.
+            Vector3 pos = new Vector3(Mathf.Round(oPos.x), Mathf.Round(oPos.y), oPos.z);
+            
+            ParticleEffectManager.Instance.
+                RequestParticleSystem(ParticleEffectManager.EffectType.BlockPlace, pos, Quaternion.identity);
+        }
+    }
     
     private void PlacePiece()
     {
-        
         SoundManager.Instance.SoundPlayOneShot("block_place");
         for (int i = 0; i < blocksOnBoardHightLight.Count; i++)
         {
@@ -462,6 +477,8 @@ public class Piece : MonoHandler
         PlayingManager.Instance.LastPiece = transform;
         //check button undo
         BoosterManager.Instance.VisibleButtonUndo();
+        
+        BlockPlaceEffect();
     }
 
  

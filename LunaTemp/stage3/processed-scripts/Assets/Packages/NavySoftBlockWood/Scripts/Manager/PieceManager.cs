@@ -1,9 +1,11 @@
-﻿using ScreenFrameWork;
+﻿using System;
+using ScreenFrameWork;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PieceManager : SingletonComponent<PieceManager>
 {
@@ -11,6 +13,7 @@ public class PieceManager : SingletonComponent<PieceManager>
     [SerializeField] private Transform pointsPlaceNextBlock;
     [SerializeField] private List<Piece> pieces = new List<Piece>();
     [SerializeField] private Piece[] piecesInGame = new Piece[3];
+    [SerializeField] private TutorialPointerBehaviour tutorialPointer;
     private int totalPieceOnBoard = 3;
     private int countPieceOnBoard = 0;
 
@@ -21,11 +24,74 @@ public class PieceManager : SingletonComponent<PieceManager>
 
     public Piece[] GetPiecesInGame => piecesInGame;
 
+    [Header("Tutorial")] 
+    [SerializeField] 
+    private float idleTimeBeforeTutorial = 7f;
+
+    private float currentTutorialTimer;
+    private bool shouldCountTutorialTimer;
+    private bool placedPieceDuringTimer;
+
     private void Start()
     {
         GameManager.Instance.SetupPlayGame += SetupPlayGame;
         GameManager.Instance.ReturnHome += ReturnHome;
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            DoTutorialHint();
+        }
+
+        if (shouldCountTutorialTimer)
+        {
+            currentTutorialTimer += Time.deltaTime;
+
+            if (currentTutorialTimer >= idleTimeBeforeTutorial)
+            {
+                DoTutorialHint();
+                shouldCountTutorialTimer = false;
+                currentTutorialTimer = 0;
+            }
+        }
+    }
+
+    public async void DoTutorialHint()
+    {
+        Piece placeablePiece = null;
+        placedPieceDuringTimer = false;
+        
+        while (placeablePiece == null || !PlayingManager.Instance.CanClickPiece)
+        {
+            foreach (var p in piecesInGame)
+            {
+                if (p != null)
+                {
+                    if (p.CanSeleted)
+                    {
+                        placeablePiece = p;
+                        break;
+                    }
+                }
+            }
+
+            await Task.Delay(300);
+            if (placedPieceDuringTimer) break;
+        }
+
+        if (placedPieceDuringTimer)
+        {
+            placedPieceDuringTimer = false;
+            return;
+        }
+
+        tutorialPointer.DragBetweenPositions(placeablePiece.transform.position, placeablePiece.possiblePlacementPos);
+        tutorialPointer.dragStartTrans = placeablePiece.transform.parent;
+    }
+    
+    
 
     private void SetupPlayGame()
     {
@@ -43,6 +109,8 @@ public class PieceManager : SingletonComponent<PieceManager>
                 return;
             }
         }
+        
+        DoTutorialHint();
     }
 
     private void ReturnHome()
@@ -66,9 +134,15 @@ public class PieceManager : SingletonComponent<PieceManager>
 
     public async void PlacePieceSuccess(Piece piece, bool destroy = false)
     {
+        if (PlayingManager.Instance.IsGameOver) return;
+        
         PlayingManager.Instance.IsDrag = false;
         countPieceOnBoard++;
         piecesInGame[piece.PieceIndex] = null;
+        
+        tutorialPointer.DisableTutorial();
+        shouldCountTutorialTimer = true;
+        placedPieceDuringTimer = true;
 
         if (PlayingManager.Instance.CurrentGameMode.NextPiece())
         {
@@ -127,6 +201,7 @@ public class PieceManager : SingletonComponent<PieceManager>
                         PlayingManager.Instance.CanClickPiece = false;
                         //yield return StartCoroutine(board.BoardGrowBlockAnimation());
                         await board.BoardGrowBlockAnimation();
+                        if (PlayingManager.Instance.IsGameOver) return;
                         PlayingManager.Instance.CanClickPiece = true;
                     }
 
@@ -281,7 +356,7 @@ public class PieceManager : SingletonComponent<PieceManager>
     public IEnumerator CheckPieceCanPlaceBoard()
     {
         yield return new WaitForSeconds(.06f);
-        for (int i = 0; i < piecesInGame.Length; i++)
+        for (int i = piecesInGame.Length - 1; i >= 0; i--)
         {
             if (piecesInGame[i] == null) continue;
 

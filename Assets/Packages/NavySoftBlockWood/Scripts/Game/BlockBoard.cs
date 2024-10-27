@@ -18,6 +18,9 @@ public class BlockBoard : MonoHandler
 
     private List<BlockBoard> blocksDestroy = new List<BlockBoard>();
 
+    [SerializeField] private int inactiveSortOrder = 2;
+    [SerializeField] private int activeSortOrder = 5;
+    
 
     public BlockObj BlockObj { get; set; }
     public bool CanPlace => !block.gameObject.activeInHierarchy;
@@ -93,12 +96,14 @@ public class BlockBoard : MonoHandler
         if (place)
         {
             block.color = Color.white;
+            block.sortingOrder = activeSortOrder;
         }
         else
         {
             Color color = block.color;
             color.a = .5f;
             block.color = color;
+            block.sortingOrder = inactiveSortOrder;
         }
     }
     
@@ -151,6 +156,13 @@ public class BlockBoard : MonoHandler
         blockHightLight.gameObject.SetActive(visible);
     }
 
+    public void OnBlockLand(float sortingOrderMul, bool spawnParticle, Vector3 particlePos)
+    {
+        MultiplySortingOrder(sortingOrderMul);
+        if (spawnParticle)
+            ParticleEffectManager.Instance.RequestParticleSystem(ParticleEffectManager.EffectType.Dust ,particlePos, Quaternion.identity);
+    }
+    
     public void MultiplySortingOrder(float amount)
     {
         block.sortingOrder = (int)(block.sortingOrder * amount);

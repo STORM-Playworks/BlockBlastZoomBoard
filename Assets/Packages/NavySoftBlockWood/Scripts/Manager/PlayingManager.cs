@@ -90,10 +90,10 @@ public class PlayingManager : SingletonComponent<PlayingManager>
         currentGameState = GameState.NONE;
         GameManager.Instance.SetupPlayGame += SetupPlayGame;
         GameManager.Instance.ReturnHome += ReturnHome;
+        
+        Debug.Log("Setting dotween capacity to 700/50");
+        DOTween.SetTweensCapacity(700, 50);
     }
-
-
-
 
     #endregion
 
@@ -101,16 +101,13 @@ public class PlayingManager : SingletonComponent<PlayingManager>
     #region Private Method
     private void ReturnHome()
     {
-        Debug.Log("Setting dotween capacity to 500/50");
-        DOTween.SetTweensCapacity(500, 50);
-        
         IsDrag = false;
         CurrentGameMode.ReturnHome();
     }
     private void SetupPlayGame()
     {
         CanClickPiece = true;
-        IsGameOver = true;
+        //IsGameOver = true;
         lengthX = 8;
         lengthY = 8;
         currentBoard = boardClassic8x8;
