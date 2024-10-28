@@ -108,6 +108,7 @@ SpriteAtlas:
     - 1b254d0634b0b7e489869be683353322: 21300000
     - 1e8e8f066f2b45441b398bc572745ffc: 21300000
     - 74f9e116486d30a4dab83f10ffc53221: 21300000
+    - 514ea316e358344aea57272e2e3caf04: 21300000
     - 2839a64645434fb4f969053f345d3116: 21300000
     - f5befe76aed982049aeb421fe4b31076: 21300000
     - 94b683961c7def84f93db1e08731375b: 21300000
@@ -195,6 +196,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1b254d0634b0b7e489869be683353322, type: 3}
   - {fileID: 21300000, guid: 1e8e8f066f2b45441b398bc572745ffc, type: 3}
   - {fileID: 21300000, guid: 74f9e116486d30a4dab83f10ffc53221, type: 3}
+  - {fileID: 21300000, guid: 514ea316e358344aea57272e2e3caf04, type: 3}
   - {fileID: 21300000, guid: 2839a64645434fb4f969053f345d3116, type: 3}
   - {fileID: 21300000, guid: f5befe76aed982049aeb421fe4b31076, type: 3}
   - {fileID: 21300000, guid: 94b683961c7def84f93db1e08731375b, type: 3}
@@ -281,6 +283,7 @@ SpriteAtlas:
   - btn_hexa_on
   - block_broken_1_3
   - no_thanks
+  - Button_Retry
   - block_3d_hexa_off
   - board_score
   - block_broken_1_1

@@ -27,10 +27,15 @@ public class PieceManager : SingletonComponent<PieceManager>
     [Header("Tutorial")] 
     [SerializeField] 
     private float idleTimeBeforeTutorial = 7f;
+    [SerializeField] 
+    private GameObject tutorialText;
 
     private float currentTutorialTimer;
     private bool shouldCountTutorialTimer;
     private bool placedPieceDuringTimer;
+    private bool firstBlockPlaced;
+
+    private int failedDrags;
 
     private void Start()
     {
@@ -90,11 +95,31 @@ public class PieceManager : SingletonComponent<PieceManager>
             return;
         }
 
-        tutorialPointer.DragBetweenPositions(placeablePiece.transform.position, placeablePiece.possiblePlacementPos);
+        bool success = tutorialPointer.DragBetweenPositions(placeablePiece.transform.position, placeablePiece.possiblePlacementPos);
+        if (!success)
+        {
+            DoTutorialHint();
+            return;
+        }
+        
         tutorialPointer.dragStartTrans = placeablePiece.transform.parent;
     }
-    
-    
+
+    public void FailedDragAnalytic()
+    {
+        failedDrags++;
+        
+        if (failedDrags > 5) return;
+        
+        if (failedDrags < 5)
+        {
+            Luna.Unity.Analytics.LogEvent($"FailedDrags_{failedDrags}", 0);
+        }
+        else
+        {
+            Luna.Unity.Analytics.LogEvent($"FailedDrags_{failedDrags}+", 0);
+        }
+    }
 
     private void SetupPlayGame()
     {
@@ -143,9 +168,15 @@ public class PieceManager : SingletonComponent<PieceManager>
         countPieceOnBoard++;
         piecesInGame[piece.PieceIndex] = null;
         
+        tutorialText.SetActive(false);
         tutorialPointer.DisableTutorial();
         shouldCountTutorialTimer = true;
         placedPieceDuringTimer = true;
+        if (!firstBlockPlaced)
+        {
+            firstBlockPlaced = true;
+            Luna.Unity.Analytics.LogEvent("FirstBlockPlaced", 0);
+        }
 
         if (PlayingManager.Instance.CurrentGameMode.NextPiece())
         {
@@ -247,21 +278,27 @@ public class PieceManager : SingletonComponent<PieceManager>
 
     public void CheckGameOver()
     {
-        Timer.Schedule(this, .3f, () =>
+        int countPieceNull = 0;
+        for (int i = 0; i < piecesInGame.Length; i++)
         {
-            int countPieceNull = 0;
-            for (int i = 0; i < piecesInGame.Length; i++)
+            if (piecesInGame[i] == null)
             {
-                if (piecesInGame[i] == null)
-                {
-                    countPieceNull++;
-                    continue;
-                }
-
-                if (piecesInGame[i].CanSeleted) return;
+                countPieceNull++;
+                continue;
             }
 
-            if (countPieceNull == piecesInGame.Length) return;
+            if (piecesInGame[i].CanSeleted) return;
+        }
+
+        if (countPieceNull == piecesInGame.Length) return;
+        
+        SoundManager.Instance.SoundPlayOneShot("fail_stage");
+        Luna.Unity.Analytics.LogEvent("FailedStage", 0);
+
+        
+        Timer.Schedule(this, .3f, () =>
+        {
+
             SoundManager.Instance.SoundPlayOneShot("gameOver");
             StartCoroutine(PlayingManager.Instance.GetCurrentBoard.GameOver());
         });

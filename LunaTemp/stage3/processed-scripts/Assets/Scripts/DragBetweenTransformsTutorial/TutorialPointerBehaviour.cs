@@ -16,11 +16,15 @@ public class TutorialPointerBehaviour : MonoBehaviour
     public Transform dragStartTrans;
     private Transform dragTargetTrans;
     private float lerpValue;
+    private float originalScale;
+    private float originalCameraSize;
 
 
     private void Start()
     {
         OrientationManager.OrientationUpdateEvent += RefreshPositioning;
+        originalScale = transform.localScale.x;
+        originalCameraSize = Camera.main.orthographicSize;
     }
 
     private void RefreshPositioning()
@@ -70,16 +74,29 @@ public class TutorialPointerBehaviour : MonoBehaviour
         }
     }
 
-    public void DragBetweenPositions([Bridge.Ref] Vector3 startPos, [Bridge.Ref] Vector3 targetPos)
+    public bool DragBetweenPositions([Bridge.Ref] Vector3 startPos, [Bridge.Ref] Vector3 targetPos)
     {
+        Vector3 nullVector = Vector3.one * 999;
+        bool VectorIsInvalid = (startPos == nullVector || targetPos == nullVector);
+        if (VectorIsInvalid)
+        {
+            Debug.Log("Invalid Vector in tutorial pointer!");
+            return false;
+        }
+
         moveableTransforms[0].position = startPos;
         moveableTransforms[1].position = targetPos;
-        
+
         DragBetweenTransforms(moveableTransforms[0], moveableTransforms[1]);
+
+        return true;
     }
 
     public void DragBetweenTransforms(Transform startT, Transform targetT)
     {
+        float scaleFactor = Camera.main.orthographicSize / originalCameraSize;
+        transform.localScale = originalScale * scaleFactor * Vector3.one;
+        
         anim.gameObject.SetActive(true);
         ResetAnim();
         isDragging = true;

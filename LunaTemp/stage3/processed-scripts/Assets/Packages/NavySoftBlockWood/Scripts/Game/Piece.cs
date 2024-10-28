@@ -32,7 +32,7 @@ public class Piece : MonoHandler
 
     private float originScale;
 
-    private bool isUpdate = false;
+    public bool IsUpdate { get; set; }
 
 
     public Piece pieceCheckPlaceBoard;
@@ -59,7 +59,7 @@ public class Piece : MonoHandler
     private void Update()
     {
        
-        if (!isUpdate) return;
+        if (!IsUpdate) return;
 
         //Off HightLight
 
@@ -231,11 +231,12 @@ public class Piece : MonoHandler
                     PlayingManager.Instance.gridInGame[blocksOnBoard[i].x, blocksOnBoard[i].y] = null;
                 }
                 SoundManager.Instance.SoundPlayOneShot("block_miss");
+                PieceManager.Instance.FailedDragAnalytic();
                 LeanTween.moveLocal(gameObject, Vector3.zero, .1f);
             }
 
         }
-        isUpdate = selected;
+        IsUpdate = selected;
     }
     
     public Vector3 GetWorldScale(Transform transform)
@@ -293,7 +294,7 @@ public class Piece : MonoHandler
 
     public bool CanPlacePieceOnBoard()
     {
-        isUpdate = false;
+        IsUpdate = false;
         blocksOnBoard.Clear();
         for (int i = 0; i < blockObjs.Count; i++)
         {

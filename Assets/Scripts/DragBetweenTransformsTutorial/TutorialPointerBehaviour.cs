@@ -74,12 +74,22 @@ public class TutorialPointerBehaviour : MonoBehaviour
         }
     }
 
-    public void DragBetweenPositions(Vector3 startPos, Vector3 targetPos)
+    public bool DragBetweenPositions(Vector3 startPos, Vector3 targetPos)
     {
+        Vector3 nullVector = Vector3.one * 999;
+        bool VectorIsInvalid = (startPos == nullVector || targetPos == nullVector);
+        if (VectorIsInvalid)
+        {
+            Debug.Log("Invalid Vector in tutorial pointer!");
+            return false;
+        }
+
         moveableTransforms[0].position = startPos;
         moveableTransforms[1].position = targetPos;
-        
+
         DragBetweenTransforms(moveableTransforms[0], moveableTransforms[1]);
+
+        return true;
     }
 
     public void DragBetweenTransforms(Transform startT, Transform targetT)

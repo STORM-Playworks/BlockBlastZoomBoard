@@ -71,6 +71,9 @@ public class GameManager : SingletonComponent<GameManager>
     [SerializeField] 
     private string rateURL = "https://www.google.com/";
 
+    [SerializeField] 
+    private GameObject retryWindow;
+
     private int currentScore = 0;
     private int bestScore = 0;
     private DataMode currentDataMode;
@@ -189,6 +192,10 @@ public class GameManager : SingletonComponent<GameManager>
 
     public void GameOverProccess()
     {
+        retryWindow.SetActive(true);
+        
+        return;
+        
        
         //bool watchAds = GoogleMobileAdsScript.instance.CheckRewardBasedVideo();
 //#if UNITY_EDITOR

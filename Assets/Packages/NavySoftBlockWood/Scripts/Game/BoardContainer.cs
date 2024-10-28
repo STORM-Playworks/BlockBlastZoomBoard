@@ -61,17 +61,24 @@ public class BoardContainer : MonoHandler
 
     private void Start()
     {
+        if (PlayingManager.Instance.playableLengthConfig == LengthConfig.Short)
+        {
+            currentGridSizeIndex++;
+            currentBlockAnimationTimeIndex++;
+        }
+        
         if (gridSizeSteps.Length > 0)
         {
-            ChangeGridSize(gridSizeSteps[0]);
+            ChangeGridSize(gridSizeSteps[currentGridSizeIndex]);
         }
     }
 
     public async Task NextGridSize()
     {
         if (resizeInProgress) return;
-        
         currentGridSizeIndex++;
+        Luna.Unity.Analytics.LogEvent($"FinishedBoard_{currentGridSizeIndex}", 0);
+
         if (currentGridSizeIndex < gridSizeSteps.Length)
         {
             if (!AnimateBoardGrow)
@@ -91,6 +98,8 @@ public class BoardContainer : MonoHandler
                     ChangeGridSize(i);
                     blocksToAnimate = GetBlocks.Except(blocksToAnimate).ToList();
                     
+                    SoundManager.Instance.SoundPlayOneShot("block_rise");
+                    
                     foreach (var block in blocksToAnimate)
                     {
                         Vector3 newPos = GetBlockPosition(block.x, block.y, nextBlockPos);
@@ -107,8 +116,8 @@ public class BoardContainer : MonoHandler
                             .OnComplete(() => block.OnBlockLand(0.5f, true, block.transform.position));
                     }
                     await Task.Delay((int)(1000* animDuration / 2f));
-
-                    print($"change to size {i}");
+                    SoundManager.Instance.SoundPlayOneShot("block_land", animDuration/2f);
+                    //print($"change to size {i}");
                 }
                 resizeInProgress = false;
             }
@@ -229,12 +238,14 @@ public class BoardContainer : MonoHandler
 
     public async Task BoardGrowBlockAnimation()
     {
+        SoundManager.Instance.SoundPlayOneShot("filled_board");
+
         await cameraController.UpdateCameraZoom();
         
         Vector2 nextBlockPos = GetNextBlockPos();
         List<BlockBoard> spiralBlocks = GetBlocks;
         spiralBlocks = SortInSpiralOrder(spiralBlocks);
-
+        
         if (currentBlockAnimationTimeIndex >= totalBlockAnimationTimes.Length)
         {
             Debug.Log("Win!");
@@ -250,7 +261,8 @@ public class BoardContainer : MonoHandler
         float delayBetweenBlocks = totalBlockAnimationTime / spiralBlocks.Count;
 
         float animDelay = delayBetweenBlocks;
-        
+        SoundManager.Instance.ToggleCountLoop(true);
+
         for (var index = 0; index < spiralBlocks.Count; index++)
         {
             var block = spiralBlocks[index];
@@ -268,8 +280,10 @@ public class BoardContainer : MonoHandler
 
             animDelay += delayBetweenBlocks;
         }
-
+        
         await Task.Delay((int)((totalBlockAnimationTime + delayBetweenBlocks) * 1000));
+        
+        SoundManager.Instance.ToggleCountLoop(false);
 
         int outerBlocksAmount = (width * 4) - 3;
         int currentBlockCount = 0;
@@ -286,7 +300,9 @@ public class BoardContainer : MonoHandler
         }
         
         await Task.Delay((int)((blockRiseTime * 0.7f) * 1000));
-
+        
+        SoundManager.Instance.SoundPlayOneShot("board_land");
+        SoundManager.Instance.SoundPlayOneShot("block_land");
         
         CameraShake();
     }
@@ -479,6 +495,7 @@ public class BoardContainer : MonoHandler
         return allBlocksInBoard[index];
     }
 
+    /*
     public IEnumerator GameOver()
     {
         List<BlockBoard> temp = new List<BlockBoard>();
@@ -499,6 +516,65 @@ public class BoardContainer : MonoHandler
             GameManager.Instance.GameOverProccess();
         });
       
+    }*/
+    
+    public IEnumerator GameOver()
+    {
+        List<BlockBoard> temp = new List<BlockBoard>();
+        temp.AddRange(blocks);
+        Dictionary<(int x, int y), BlockBoard> blockDictionary = temp.ToDictionary(bb => (bb.x, bb.y));
+    
+        GameManager.Instance.VisibleButton(false);
+
+        List<List<(int x, int y)>> ringsCoordinates = GenerateRingCoordinates(width, height);
+
+        foreach(var ring in ringsCoordinates)
+        {
+            foreach(var coord in ring)
+            {
+                if (!blockDictionary.ContainsKey(coord)) continue;
+
+                BlockBoard block = blockDictionary[coord];
+
+                if (block.CanPlace) continue;
+
+                block.ToggleActiveBlockGFX(false);
+            }
+
+            yield return new WaitForSeconds(.2f);
+        }
+
+        Timer.Schedule(this, 0.2f, () =>
+        {
+            // Show Game Over
+            GameManager.Instance.GameOverProccess();
+        });
+    }
+
+    private List<List<(int x, int y)>> GenerateRingCoordinates(int width, int height)
+    {
+        List<List<(int x, int y)>> rings = new List<List<(int x, int y)>>();
+        int maxRadius = Mathf.Max(width, height) / 2;
+
+        for (int r = maxRadius; r >= 0; r--)
+        {
+            List<(int x, int y)> ring = new List<(int x, int y)>();
+            for (int x = 0; x < width; x++)
+            {
+                for (int y = 0; y < height; y++)
+                {
+                    if (Mathf.Max(Mathf.Abs(x - width / 2), Mathf.Abs(y - height / 2)) == r)
+                    {
+                        ring.Add((x, y));
+                    }
+                }
+            }
+            if (ring.Count > 0)
+            {
+                rings.Add(ring);
+            }
+        }
+        return rings;
     }
 
     public Vector3 GetBlockPosition(int x, int y, Vector2 nextBlock)

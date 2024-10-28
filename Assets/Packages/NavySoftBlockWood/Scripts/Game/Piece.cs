@@ -231,6 +231,7 @@ public class Piece : MonoHandler
                     PlayingManager.Instance.gridInGame[blocksOnBoard[i].x, blocksOnBoard[i].y] = null;
                 }
                 SoundManager.Instance.SoundPlayOneShot("block_miss");
+                PieceManager.Instance.FailedDragAnalytic();
                 LeanTween.moveLocal(gameObject, Vector3.zero, .1f);
             }
 

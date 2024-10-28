@@ -1,6 +1,8 @@
-﻿    using System.Collections;
+﻿    using System;
+    using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+    using System.Threading.Tasks;
+    using UnityEngine;
 using ScreenFrameWork;
 [System.Serializable]
 public class SoundClipInfor
@@ -19,6 +21,10 @@ public class SoundManager : SingletonComponent<SoundManager>
     [SerializeField]
     private AudioSource soundSource;
 
+    [SerializeField] 
+    private AudioSource countLoop;
+
+    private bool bgmPlaying;
 
     private void Start()
     {
@@ -38,6 +44,29 @@ public class SoundManager : SingletonComponent<SoundManager>
         }
     }
 
+    private void Update()
+    {
+        if (bgmPlaying) return;
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            bgmPlaying = true;
+            musicSource.Play();
+        }
+    }
+
+    public void ToggleCountLoop(bool on)
+    {
+        if (on)
+        {
+            countLoop.Play();
+        }
+        else
+        {
+            countLoop.Stop();
+        }
+    }
+
     public void ButtonClickedSound()
     {
         SoundClipInfor button = soundClipInfors.Find(x => x.id.Equals("Button"));
@@ -46,6 +75,13 @@ public class SoundManager : SingletonComponent<SoundManager>
 
     public void SoundPlayOneShot(string nameSound)
     {
+        SoundClipInfor button = soundClipInfors.Find(x => x.id.Equals(nameSound));
+        soundSource.PlayOneShot(button.audioClip);
+    }
+    
+    public async void SoundPlayOneShot(string nameSound, float delay)
+    {
+        await Task.Delay((int)(1000 * delay));
         SoundClipInfor button = soundClipInfors.Find(x => x.id.Equals(nameSound));
         soundSource.PlayOneShot(button.audioClip);
     }

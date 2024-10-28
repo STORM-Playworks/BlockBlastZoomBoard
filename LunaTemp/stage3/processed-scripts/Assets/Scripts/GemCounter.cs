@@ -11,7 +11,8 @@ public class GemCounter : MonoBehaviour
     [SerializeField] private Image gemIcon;
     [SerializeField] private int neededAmount;
     [SerializeField] private int currentAmount;
-    [SerializeField] private float receiveAnimDuration = 1.5f;
+    [SerializeField] private float receiveAnimDuration = 0.5f;
+    [SerializeField] private float flyOverDuration = 1f;
     private Vector3 iconScale;
     
     // Start is called before the first frame update
@@ -44,17 +45,22 @@ public class GemCounter : MonoBehaviour
         SpriteRenderer tempSR = copiedGem.GetComponent<SpriteRenderer>();
         tempSR.sortingOrder = confirmSortOrder;
         tempSR.color = Color.white;
+        
 
         Sequence seq = DOTween.Sequence();
 
         seq
             .AppendInterval(delay)
-            .Append(copiedGem.transform.DOMove(gemIcon.transform.position, receiveAnimDuration * 0.66f).SetEase(Ease.InQuad))
-            .Join(copiedGem.transform.DOScale(1.5f, receiveAnimDuration * 0.66f))
+            .AppendCallback((() => SoundManager.Instance.SoundPlayOneShot("gem_collected")))
+            .Append(copiedGem.transform.DOMove(gemIcon.transform.position, flyOverDuration).SetEase(Ease.InQuad))
+            .Join(copiedGem.transform.DOScale(1.5f, flyOverDuration))
             .AppendCallback(() => ResetIconSize())
             .AppendCallback(() => ReduceCount())
             .AppendCallback(() => copiedGem.SetActive(false))
-            .Append(gemIcon.transform.DOScale(iconScale * 1.2f, receiveAnimDuration * 0.33f).SetLoops(2, LoopType.Yoyo));
+            .AppendCallback((() => SoundManager.Instance.SoundPlayOneShot("gem_received")))
+            .Append(gemIcon.transform.DOScale(iconScale * 1.2f, receiveAnimDuration).SetLoops(2, LoopType.Yoyo))
+            .Join(tempSR.DOColor(Color.yellow, receiveAnimDuration).SetLoops(2, LoopType.Yoyo));
+
     }
 
     private void ResetIconSize()

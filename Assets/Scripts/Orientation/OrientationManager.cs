@@ -29,7 +29,7 @@ public class OrientationManager : MonoBehaviour
     {
         StartCoroutine(InitializeOrientation());
         
-        string analytic = isCurrentlyPortrait ? "Portrait" : "Landscape";
+        string analytic = isCurrentlyPortrait ? "Landscape" : "Portrait";
         Luna.Unity.Analytics.LogEvent(analytic, 0);
     }
 

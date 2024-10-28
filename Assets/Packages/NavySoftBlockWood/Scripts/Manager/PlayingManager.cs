@@ -16,7 +16,17 @@ public enum GameState : byte
     OTHER_SCREEN
 }
 
+public enum LengthConfig
+{
+    Full,
+    Short
+}
 
+public enum StageConfig
+{
+    Endless,
+    Limited
+}
 
 
 public class PlayingManager : SingletonComponent<PlayingManager>
@@ -73,6 +83,18 @@ public class PlayingManager : SingletonComponent<PlayingManager>
 
     public bool IsGameOver { get; set; }
 
+    [LunaPlaygroundField("Length config", 2, "Game Settings")]
+    public LengthConfig playableLengthConfig;
+    
+    [LunaPlaygroundField("Length config", 3, "Game Settings")]
+    public StageConfig playableStageConfig;
+
+    [SerializeField] 
+    private GameObject fakeStageContinuation;
+    [SerializeField] 
+    private Image stageBG;
+
+
     public int TotalLineDestroy => Mathf.RoundToInt((float)PlayingManager.Instance.TotalBlocksDestroy / PlayingManager.Instance.GetCurrentBoard.GetWidth);
 
     [System.Serializable]
@@ -86,7 +108,20 @@ public class PlayingManager : SingletonComponent<PlayingManager>
     private void Update() => SelectedAndDragPiece();
     private void Start()
     {
-
+        switch (playableStageConfig)
+        {
+            case StageConfig.Endless:
+                fakeStageContinuation.SetActive(true);
+                stageBG.color = Color.grey;
+                break;
+            case StageConfig.Limited:
+                fakeStageContinuation.SetActive(false);
+                stageBG.color = Color.white;
+                break;
+            default:
+                throw new ArgumentOutOfRangeException();
+        }
+        
         currentGameState = GameState.NONE;
         GameManager.Instance.SetupPlayGame += SetupPlayGame;
         GameManager.Instance.ReturnHome += ReturnHome;

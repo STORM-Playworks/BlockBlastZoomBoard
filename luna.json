@@ -7146,10 +7146,6 @@
                 "excluded": true
             },
             {
-                "name": "DG.Tweening.Plugins.ColorPlugin",
-                "excluded": true
-            },
-            {
                 "name": "DG.Tweening.Plugins.DoublePlugin",
                 "excluded": true
             },
@@ -7375,10 +7371,6 @@
             },
             {
                 "name": "DG.Tweening.DOTweenModulePhysics2D",
-                "excluded": true
-            },
-            {
-                "name": "DG.Tweening.DOTweenModuleSprite",
                 "excluded": true
             },
             {
@@ -8543,6 +8535,14 @@
             },
             {
                 "name": "ParticleEffectManager.EffectType",
+                "excluded": false
+            },
+            {
+                "name": "LengthConfig",
+                "excluded": false
+            },
+            {
+                "name": "StageConfig",
                 "excluded": false
             }
         ],
@@ -13557,7 +13557,7 @@
                     },
                     {
                         "name": "CombineHashCodes",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CombineHashCodes$1",
@@ -13725,7 +13725,7 @@
                     },
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "System$ITupleInternal$Size#get",
@@ -13733,11 +13733,11 @@
                     },
                     {
                         "name": "$ctor1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "equals",
@@ -13745,7 +13745,7 @@
                     },
                     {
                         "name": "equalsT",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "System$Collections$IStructuralEquatable$Equals",
@@ -13765,7 +13765,7 @@
                     },
                     {
                         "name": "getHashCode",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "System$Collections$IStructuralEquatable$GetHashCode",
@@ -13789,7 +13789,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -18711,11 +18711,11 @@
                     },
                     {
                         "name": "color#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "color#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
@@ -18995,7 +18995,7 @@
                     },
                     {
                         "name": "fillMethod#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fillMethod#set",
@@ -19035,7 +19035,7 @@
                     },
                     {
                         "name": "preserveAspect#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "preserveAspect#set",
@@ -20263,15 +20263,15 @@
                 "instanceMethods": [
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Reset",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "getHashCode",
@@ -20283,7 +20283,7 @@
                     },
                     {
                         "name": "$clone",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -20724,6 +20724,10 @@
                     {
                         "name": "DoTutorialHint",
                         "excluded": false
+                    },
+                    {
+                        "name": "FailedDragAnalytic",
+                        "excluded": true
                     }
                 ]
             },
@@ -20911,6 +20915,18 @@
                     },
                     {
                         "name": "SoundPlayOneShot",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ToggleCountLoop",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SoundPlayOneShot$1",
                         "excluded": false
                     }
                 ]
@@ -24059,7 +24075,7 @@
                     },
                     {
                         "name": "targetDisplay#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "targetDisplay#set",
@@ -30574,6 +30590,10 @@
                     {
                         "name": "CollectGem",
                         "excluded": false
+                    },
+                    {
+                        "name": "GenerateRingCoordinates",
+                        "excluded": false
                     }
                 ]
             },
@@ -35941,7 +35961,7 @@
                     },
                     {
                         "name": "To$8",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "To$10",
@@ -38475,6 +38495,130 @@
                 "instanceMethods": [
                     {
                         "name": "IsName",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DOTWeenPulseAnim",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnEnable",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ConfirmScale",
+                        "excluded": true
+                    },
+                    {
+                        "name": "OnDisable",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "FadeOutCanvasGroup",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DoFadeOut",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ToggleFade",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "TransformByOrientation",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Start",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ChangeTransformOrientation",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEventOnEnable",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "OnEnable",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.Plugins.ColorPlugin",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Reset",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetFrom$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetFrom",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ConvertToStartValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetRelativeEndValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetChangeValue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetSpeedBasedDuration",
+                        "excluded": true
+                    },
+                    {
+                        "name": "EvaluateAndApply",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.DOTweenModuleSprite",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "DOColor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DOFade",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOGradientColor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendableColor",
                         "excluded": true
                     }
                 ]

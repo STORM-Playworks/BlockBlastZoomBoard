@@ -22,9 +22,12 @@ public class CameraController : MonoBehaviour
 
     private void InitializeCam()
     {
+        if (PlayingManager.Instance.playableLengthConfig == LengthConfig.Short)
+            currentZoomIndex++;
+        
         if (!doCameraZoom) return;
         
-        csr.UpdateTargetSizes(cameraZoomLevels[0], cameraZoomLevels[0] + landscapeOffset[0]);
+        csr.UpdateTargetSizes(cameraZoomLevels[currentZoomIndex], cameraZoomLevels[currentZoomIndex] + landscapeOffset[currentZoomIndex]);
         currentZoomIndex++;
     }
     

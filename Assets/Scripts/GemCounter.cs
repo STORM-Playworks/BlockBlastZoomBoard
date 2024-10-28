@@ -45,18 +45,22 @@ public class GemCounter : MonoBehaviour
         SpriteRenderer tempSR = copiedGem.GetComponent<SpriteRenderer>();
         tempSR.sortingOrder = confirmSortOrder;
         tempSR.color = Color.white;
+        
 
         Sequence seq = DOTween.Sequence();
 
         seq
             .AppendInterval(delay)
+            .AppendCallback((() => SoundManager.Instance.SoundPlayOneShot("gem_collected")))
             .Append(copiedGem.transform.DOMove(gemIcon.transform.position, flyOverDuration).SetEase(Ease.InQuad))
             .Join(copiedGem.transform.DOScale(1.5f, flyOverDuration))
             .AppendCallback(() => ResetIconSize())
             .AppendCallback(() => ReduceCount())
             .AppendCallback(() => copiedGem.SetActive(false))
+            .AppendCallback((() => SoundManager.Instance.SoundPlayOneShot("gem_received")))
             .Append(gemIcon.transform.DOScale(iconScale * 1.2f, receiveAnimDuration).SetLoops(2, LoopType.Yoyo))
             .Join(tempSR.DOColor(Color.yellow, receiveAnimDuration).SetLoops(2, LoopType.Yoyo));
+
     }
 
     private void ResetIconSize()
