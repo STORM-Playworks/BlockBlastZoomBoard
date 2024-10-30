@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,7 +19,7 @@ public class BlockBoard : MonoHandler
 
     private List<BlockBoard> blocksDestroy = new List<BlockBoard>();
 
-    [SerializeField] private int inactiveSortOrder = 2;
+    [SerializeField] private int inactiveSortOrder = 3;
     [SerializeField] private int activeSortOrder = 5;
     
 
@@ -38,6 +39,12 @@ public class BlockBoard : MonoHandler
     public int y;
 
     private SpriteRenderer blockEmpty;
+
+    private void Start()
+    {
+        //Board blocks aren't prefabs and multi inspector editing isn't supported, lazy assign...
+        inactiveSortOrder = 3;
+    }
 
     public void SetBlockImage(Sprite image)
     {

@@ -71,7 +71,10 @@ public class Piece : MonoHandler
         blocksOnBoardHightLight.Clear();
         for (int i = 0; i < blocksOnBoard.Count; i++)
         {
-            blockObjs[i].VisibleBlockDestroyLine(false);
+            if (i < blockObjs.Count -1)
+            {
+                blockObjs[i].VisibleBlockDestroyLine(false);
+            }
           
             blocksOnBoard[i].VisibleBlock(false);
             blocksOnBoard[i].ShowBlocksCrossCanDestroy(blocksOnBoardHightLight);
@@ -81,6 +84,7 @@ public class Piece : MonoHandler
         CanPlacePiece = false;
         dstList.Clear();
         //Check Block On Board Can Place
+
         for (int i = 0; i < blockObjs.Count; i++)
         {
             for (int j = 0; j < PlayingManager.Instance.GetCurrentBoard.GetBlocks.Count; j++)
@@ -92,16 +96,16 @@ public class Piece : MonoHandler
                 blockPos.z = 0;
                 boardBlockPos.z = 0;
                 float dst = Vector3.Distance(blockPos, boardBlockPos);
-                if (dst > .35f) continue;
-                if (dst <= .35f)
+                if (dst > .65f) continue;
+                if (dst <= .65f)
                 {
                     blockBoard.BlockObj = blockObjs[i];
                     blocksOnBoard.Add(blockBoard);
-
                 }
             }
-        }
 
+            blocksOnBoard = blocksOnBoard.Distinct().ToList();
+        }
 
        
         if (blocksOnBoard.Count == blockObjs.Count)
@@ -231,6 +235,7 @@ public class Piece : MonoHandler
                     PlayingManager.Instance.gridInGame[blocksOnBoard[i].x, blocksOnBoard[i].y] = null;
                 }
                 SoundManager.Instance.SoundPlayOneShot("block_miss");
+                blocksOnBoard.Clear();
                 PieceManager.Instance.FailedDragAnalytic();
                 LeanTween.moveLocal(gameObject, Vector3.zero, .1f);
             }
@@ -307,8 +312,8 @@ public class Piece : MonoHandler
                 blockPos.z = 0;
                 boardBlockPos.z = 0;
                 float dst = Vector3.Distance(blockPos, boardBlockPos);
-                if (dst > .6f) continue;
-                if (dst <= .6f)
+                if (dst > .65f) continue;
+                if (dst <= .65f)
                 {
                     blocksOnBoard.Add(blockBoard);
                 }
@@ -354,7 +359,7 @@ public class Piece : MonoHandler
 
     private void BlockPlaceEffect()
     {
-        foreach (var b in blockObjs)
+        foreach (var b in blocksOnBoard)
         {
             Vector3 oPos = b.transform.position;
             //Not sure why there's a slight offset, but since all my blocks move in intervals of 1 in world space, I'm just rounding the positions for now.

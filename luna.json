@@ -1,8 +1,8 @@
 {
     "version": "6.1.1",
     "projectId": "6c1be5bf0a106ba48902a4e901795c4a",
-    "applicationID": 11106,
-    "creativeName": "",
+    "applicationID": 15065,
+    "creativeName": "ZoomBoard",
     "pgServer": "EU",
     "window": {
         "‐ ": true
@@ -1478,10 +1478,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.AddComponentMenu",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.AnimatorClipInfo",
                 "excluded": true
             },
@@ -1595,10 +1591,6 @@
             },
             {
                 "name": "UnityEngine.Hash128",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.HelpURLAttribute",
                 "excluded": true
             },
             {
@@ -1746,19 +1738,11 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.RequireComponent",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.RootMotionData",
                 "excluded": true
             },
             {
                 "name": "UnityEngine.Scripting.CachedAssetBundle",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.Serialization.FormerlySerializedAsAttribute",
                 "excluded": true
             },
             {
@@ -1970,10 +1954,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.HeaderAttribute",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.MultilineAttribute",
                 "excluded": true
             },
@@ -1999,14 +1979,6 @@
             },
             {
                 "name": "UnityEngine.RuntimeInitializeOnLoadMethodAttribute",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.SpaceAttribute",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.TextAreaAttribute",
                 "excluded": true
             },
             {
@@ -3799,7 +3771,7 @@
             },
             {
                 "name": "UnityEngine.DisallowMultipleComponent",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.Dof",
@@ -3851,7 +3823,7 @@
             },
             {
                 "name": "UnityEngine.ExecuteAlwaysAttribute",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.ExecuteInEditModeAttribute",
@@ -3991,7 +3963,7 @@
             },
             {
                 "name": "UnityEngine.PropertyAttribute",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.HideFlags",
@@ -3999,7 +3971,7 @@
             },
             {
                 "name": "UnityEngine.HideInInspector",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "UnityEngine.HorizontalWrapMode",
@@ -6899,7 +6871,7 @@
             },
             {
                 "name": "TMPro.ITextPreprocessor",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "TMPro.MarkupTag",
@@ -16839,7 +16811,7 @@
                     },
                     {
                         "name": "name#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "name#set",
@@ -18855,7 +18827,7 @@
                     },
                     {
                         "name": "OnTransformParentChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnEnable",
@@ -18937,7 +18909,7 @@
                     },
                     {
                         "name": "OnTransformParentChanged",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ParentMaskStateChanged",
@@ -20727,7 +20699,7 @@
                     },
                     {
                         "name": "FailedDragAnalytic",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -25259,7 +25231,7 @@
                 "instanceMethods": [
                     {
                         "name": "childAlignment#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "childAlignment#set",
@@ -25513,7 +25485,7 @@
                     },
                     {
                         "name": "childControlWidth#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "childControlWidth#set",
@@ -25521,7 +25493,7 @@
                     },
                     {
                         "name": "childControlHeight#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "childControlHeight#set",
@@ -27987,7 +27959,7 @@
                     },
                     {
                         "name": "defaultFontAsset#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "defaultFontAssetPath#get",
@@ -30479,6 +30451,10 @@
                     },
                     {
                         "name": "OnBlockLand",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
                         "excluded": false
                     }
                 ]
@@ -38371,7 +38347,7 @@
                     },
                     {
                         "name": "SendToStore",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -38509,15 +38485,15 @@
                     },
                     {
                         "name": "OnEnable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ConfirmScale",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -38545,11 +38521,11 @@
                 "instanceMethods": [
                     {
                         "name": "Start",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ChangeTransformOrientation",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -38620,6 +38596,112 @@
                     {
                         "name": "DOBlendableColor",
                         "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.AddComponentMenu",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "componentMenu#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "componentOrder#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.HelpURLAttribute",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "URL#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.RequireComponent",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$ctor2",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Serialization.FormerlySerializedAsAttribute",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "oldName#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.TextAreaAttribute",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.SpaceAttribute",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.HeaderAttribute",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
                     }
                 ]
             }
@@ -38738,6 +38820,16 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/Packages/NavySoftBlockWood/Font/digital-7 SDF.asset"
+                    },
+                    {
+                        "maxWidth": 1024,
+                        "maxHeight": 1024,
+                        "format": "png32",
+                        "compression": "quantQuality",
+                        "quality": 65,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/Scripts/DragBetweenTransformsTutorial/Tap-Spritesheet.png"
                     }
                 ]
             },

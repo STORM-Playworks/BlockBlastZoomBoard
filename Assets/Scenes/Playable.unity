@@ -60843,7 +60843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &870648593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -71298,6 +71298,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -1426.6667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735351332868545129, guid: 600c298df1c4b48ed89a33a4bb4e2d6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735351332868545129, guid: 600c298df1c4b48ed89a33a4bb4e2d6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735351332868545129, guid: 600c298df1c4b48ed89a33a4bb4e2d6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1238215232}
+    - target: {fileID: 7735351332868545129, guid: 600c298df1c4b48ed89a33a4bb4e2d6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735351332868545129, guid: 600c298df1c4b48ed89a33a4bb4e2d6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SendToStore
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735351332868545129, guid: 600c298df1c4b48ed89a33a4bb4e2d6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EndcardManagement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735351332868545129, guid: 600c298df1c4b48ed89a33a4bb4e2d6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7735351332899117476, guid: 600c298df1c4b48ed89a33a4bb4e2d6b,
         type: 3}
@@ -105178,8 +105213,8 @@ MonoBehaviour:
   boardHexa: {fileID: 324334967}
   currentBoard: {fileID: 0}
   CanClickPiece: 1
-  playableLengthConfig: 1
-  playableStageConfig: 1
+  playableLengthConfig: 0
+  playableStageConfig: 0
   fakeStageContinuation: {fileID: 912214256}
   stageBG: {fileID: 755921179}
 --- !u!1 &1674680700
